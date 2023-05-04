@@ -1,0 +1,483 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  font-family: "poppins";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/poppins-regular-webfont.woff);
+  font-weight: normal;
+}
+#first {
+  height: 49.5em;
+  background-color: #010113;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 0.5em;
+}
+#first .home {
+  color: #fff;
+  height: 38em;
+  background-image: linear-gradient(to top right, rgb(52, 52, 81), #1e1e37, rgb(68, 73, 104));
+  border-radius: 15px;
+  width: 90%;
+}
+#first .home .navbar {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#first .home .navbar nav {
+  padding: 1em 6em 0em;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 4em;
+}
+#first .home .navbar nav div.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#first .home .navbar nav div.head h2 {
+  font-size: 1.65rem;
+  text-shadow: 1px 1px 2px rgb(53, 46, 46), 0 0 20px rgb(63, 63, 99), 0 0 5px rgb(143, 143, 215);
+}
+#first .home .navbar nav div.info {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#first .home .navbar nav div.info a.text {
+  color: #fff;
+  padding: 1em 2em;
+  background-color: rgb(64, 207, 7);
+  border-radius: 30px;
+  font-weight: 600;
+  text-shadow: 2px 1px 5px rgb(81, 62, 62);
+}
+#first .home .navbar nav div.info a.icon {
+  display: none;
+}
+#first .home .details {
+  padding: 2em 8em 0;
+  height: 30em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: url(../images/foodfeeder2.png) no-repeat;
+  background-size: 32em;
+  background-position: right 7em bottom 5em;
+}
+#first .home .details video {
+  width: 45%;
+  position: absolute;
+  left: 7%;
+  bottom: 25%;
+  border-radius: 10px;
+}
+#first .home .details .wrapper {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 7%;
+  bottom: 25%;
+  border-radius: 0 0 10px 10px;
+  width: 45%;
+  height: 26%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#first .home .details .wrapper h1 {
+  font-size: 3rem;
+}
+#first .home .details .wrapper p {
+  font-size: 1.05rem;
+  line-height: 1.5em;
+}
+#first .home .details .wrapper div {
+  padding: 0 2%;
+}
+#first .home .details .wrapper div .btn {
+  border: none;
+  text-align: center;
+  width: 6em;
+  height: 2.35em;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.05rem;
+  background-color: #010113;
+  background-image: linear-gradient(to top right, rgb(85, 6, 188));
+  color: #fff;
+  text-decoration: none;
+}
+
+#second {
+  background-color: #010113;
+  height: 45em;
+  position: relative;
+  z-index: 1;
+}
+#second div.about div.wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+#second div.about div.wrapper div.image img.feeder {
+  display: none;
+}
+#second div.about div.wrapper div.spec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#second div.about div.wrapper div.spec h2 {
+  color: #fff;
+  margin-bottom: 2em;
+}
+#second div.about div.wrapper div.spec ul li {
+  color: #fff;
+  line-height: 3em;
+  list-style: disc;
+}
+
+#third {
+  background-color: #010113;
+  height: 46em;
+  position: relative;
+  z-index: 1;
+}
+#third div.components div.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#third div.components div.wrapper div.comp h2 {
+  color: #fff;
+  margin-bottom: 1.5em;
+}
+#third div.components div.wrapper div.comp ul li {
+  color: #fff;
+  list-style-type: disc;
+  line-height: 3em;
+}
+#third div.components div.wrapper div.vid {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#third div.components div.wrapper div.vid video {
+  height: 40em;
+  position: absolute;
+}
+#third div.components div.wrapper div.vid div.play {
+  position: relative;
+  right: 0em;
+  bottom: 0em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22.5em;
+  height: 40em;
+}
+#third div.components div.wrapper div.vid div.play:hover {
+  background: rgba(152, 152, 152, 0.5);
+}
+#third div.components div.wrapper div.vid div.play img {
+  display: none;
+}
+
+#mask {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: -2;
+}
+
+#gallery {
+  position: fixed;
+  z-index: 0;
+  left: 0;
+  top: 6em;
+  width: 100%;
+}
+#gallery .wrapper {
+  width: 100%;
+}
+#gallery .wrapper div.head h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+#gallery .wrapper .images {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#gallery .wrapper .images div.owl-stage-outer {
+  width: 100%;
+}
+#gallery .wrapper .images div.owl-stage-outer div.owl-stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38em;
+}
+#gallery .wrapper .images div.owl-stage-outer div.owl-stage div.owl-item {
+  display: flex;
+  justify-content: center;
+}
+#gallery .wrapper .images div.item {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#gallery .wrapper .images div.item img {
+  width: 45%;
+  border-radius: 10px;
+  border: 6px solid #010113;
+  box-shadow: 0px -8px 35px 5px #888888;
+}
+#gallery .wrapper .images div.item img.second_slide {
+  width: 45%;
+}
+#gallery .wrapper .images div.item img.image1 {
+  transform: rotate(10deg);
+}
+#gallery .wrapper .images div.item img.image2 {
+  transform: rotate(-15deg);
+}
+#gallery .wrapper .images div.item img.image3 {
+  transform: rotate(-10deg);
+}
+#gallery .wrapper .images div.item img.image4 {
+  transform: rotate(5deg);
+}
+#gallery .wrapper .images div.item img.image5 {
+  transform: rotate(-5deg);
+}
+#gallery .wrapper .images div.item img.image6 {
+  transform: rotate(3deg);
+}
+#gallery .wrapper .images div.owl-dots {
+  margin: 0;
+}
+#gallery .wrapper div.mobile_images {
+  display: none;
+}
+
+/* Responsive section */
+@media all and (max-width: 1432px) {
+  #first .home .details {
+    background-size: 29em;
+    background-position: right 5em bottom 5em;
+  }
+}
+@media all and (max-width: 1250px) {
+  #first .home .details {
+    background-size: 25em;
+    background-position: right 3em bottom 5em;
+  }
+}
+@media all and (max-width: 1150px) {
+  #first {
+    height: 59.5em;
+  }
+  #first .home {
+    height: 48em;
+  }
+  #first .home .details {
+    background: none;
+  }
+  #first .home .details video {
+    width: 80%;
+    left: 9.5%;
+    bottom: 20%;
+  }
+  #first .home .details div.wrapper {
+    width: 80%;
+    left: 9.5%;
+    bottom: 20%;
+  }
+}
+@media all and (max-width: 1038px) {
+  #first .home .navbar nav div.info a.text {
+    display: none;
+  }
+  #first .home .navbar nav div.info a.icon {
+    display: block;
+    padding: 0.7em 0.85em;
+    background-color: rgb(64, 207, 7);
+    border-radius: 50%;
+  }
+}
+@media all and (max-width: 820px) {
+  #first {
+    height: 49.5em;
+  }
+  #first .home {
+    height: 38em;
+  }
+  #second div.about div.wrapper div.spec {
+    margin-right: 1em;
+  }
+}
+@media all and (max-width: 750px) {
+  #first {
+    height: 59.5em;
+  }
+  #first .home {
+    height: 48em;
+  }
+  #first .home .navbar nav div.head h2 {
+    font-size: 1.25rem;
+  }
+  #first .home .details {
+    padding: 0 2em 0;
+  }
+  #first .home .details video {
+    position: absolute;
+    top: 14em;
+    border-radius: 10px 10px 0 0;
+  }
+  #first .home .details div.wrapper {
+    position: absolute;
+    top: 34.5em;
+  }
+  #first .home .details div.wrapper h1 {
+    font-size: 2.25rem;
+  }
+  #second {
+    height: 75em;
+  }
+  #second div.about div.wrapper {
+    height: 75em;
+  }
+  #second div.about div.wrapper div.image {
+    position: absolute;
+    top: 0;
+  }
+  #second div.about div.wrapper div.image img.top {
+    display: none;
+  }
+  #second div.about div.wrapper div.image img.feeder {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #second div.about div.wrapper div.spec {
+    position: absolute;
+    top: 35em;
+    width: 70%;
+    margin: 0;
+  }
+  #third {
+    height: 80em;
+  }
+  #third div.components div.wrapper {
+    height: 80em;
+  }
+  #third div.components div.wrapper div.comp {
+    position: absolute;
+    top: 48em;
+  }
+  #third div.components div.wrapper div.vid {
+    position: absolute;
+    top: 2em;
+  }
+  #third div.components div.wrapper div.vid video {
+    border-radius: 15px;
+  }
+  #third div.components div.wrapper div.vid div.play {
+    border-radius: 15px;
+  }
+  #gallery div.wrapper div.head h1 {
+    margin-bottom: 0.5em;
+  }
+  #gallery div.wrapper div.images {
+    display: none;
+  }
+  #gallery div.wrapper div.mobile_images {
+    width: 100%;
+    height: 35em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #gallery div.wrapper div.mobile_images div.owl-stage-outer {
+    width: 100%;
+  }
+  #gallery div.wrapper div.mobile_images div.owl-stage-outer div.owl-stage div.item {
+    width: 100%;
+    height: 28.25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #gallery div.wrapper div.mobile_images div.owl-stage-outer div.owl-stage div.item img {
+    width: 60%;
+    border: 5px solid #010113;
+    box-shadow: 0px -8px 35px 5px #888888;
+    border-radius: 10px;
+  }
+  #gallery div.wrapper div.mobile_images div.owl-stage-outer div.owl-stage div.item img.image4 {
+    width: 46%;
+  }
+  #gallery div.wrapper div.mobile_images div.owl-dots {
+    margin: 0;
+  }
+}
+@media all and (max-width: 520px) {
+  #first .home .details div.wrapper {
+    height: 32%;
+    top: 32em;
+  }
+  #second div.about div.wrapper div.spec {
+    top: 30em;
+  }
+}
+@media all and (max-width: 420px) {
+  #first .home {
+    height: 45em;
+  }
+  #first .home .navbar nav {
+    padding: 1em 1em 0;
+  }
+  #first .home .navbar nav div.head h2 {
+    font-size: 1rem;
+  }
+  #first .home .details {
+    padding: 0 2em 0;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-position: right 50% bottom 10%;
+  }
+  #first .home .details video {
+    top: 17.2em;
+  }
+  #first .home .details div.wrapper {
+    top: 37em;
+    margin-top: -8em;
+  }
+  #first .home .details div.wrapper h1 {
+    font-size: 2.25rem;
+  }
+}/*# sourceMappingURL=Foodfeeder.css.map */
